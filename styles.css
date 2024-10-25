@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     /*Primary*/
     --light-red: hsl(0, 100%, 67%);
@@ -26,7 +28,174 @@
     padding: 0;
 }
 
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neutral-white);
+}
 
+.container {
+    display: flex;
+    max-width: 600px;
+    border-radius: 24px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.result {
+    background-image: linear-gradient(var(--lightslate-blue), 
+    var(--lightroyal-blue));
+    padding: 15px 46px 50px 46px;
+    text-align: center;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    
+}
+
+.result h2 {
+    color: var(--neutral-white);
+    font-size: 1.25rem;
+    margin-bottom: 26px;
+    font-weight: 700;
+    opacity: 0.8;
+
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.circle .score {
+    color: var(--neutral-white);
+    font-size: 3.625rem;
+    font-weight: 700;
+}
+
+.circle .total {
+    color: var(--neutral-white);
+    font-size: 0.875rem;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.result h3 {
+    color: var(--neutral-white);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.result p {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.901rem;
+    line-height: 1.25;
+    opacity: 0.7;
+}
+
+
+.summary {
+    width: 50%;
+    padding: 15px 46px 50px 46px;
+}
+
+.summary h2 {
+    color: var(--darkgray-blue);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.summary {
+    width: 50%;
+    padding: 40px;
+    font-size: 1.1rem;
+    padding-top: 16px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.25rem;
+    width: 90%;
+}
+
+.categories > div {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 0 5px;
+} 
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+  
+.icon img {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.rating p {
+    color: var(--darkgray-blue);
+}
+
+.reaction, .memory, .verbal, .visual {
+    height: 2.438rem;
+}
+
+.reaction {
+    color: var(--light-red);
+    background-color: #FFF6F5;
+  }
+  
+.memory {
+    color: var(--orangey-yellow);
+    background-color: #FFFBF2;
+}
+  
+.verbal {
+    color: var(--green-teal);
+    background-color: #F2FBFA;
+}
+  
+.visual {
+    color: var(--violet-blue);
+    background-color: #F3F3FD;
+}
+
+button.btn {
+    cursor: pointer;
+    width: 90%;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--darkgray-blue);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+    margin-top: 36px;
+}
+
+button:hover {
+    background-image: linear-gradient( var(--lightslate-blue), var(--lightroyal-blue))
+}
 
 .attribution {
      font-size: 11px; text-align: center; 
